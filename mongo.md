@@ -5,7 +5,7 @@
 
 
 download for local or create an atlas account for cloud:\
-https://www.mongodb.com/try/download/community\
+https://www.mongodb.com/try/download/community \
 https://www.mongodb.com/fr-fr/cloud/atlas
 
 
@@ -24,7 +24,7 @@ connection
 client = MongoClient()
 ```
 
-Lister les base de données \
+Lister les bases de données \
 pour les méthodes de type list ou find mongo retourne un curseur qui peut être parcouru dans une boucle ou dérouler directement dans une liste.
 ```py
 db_names = list(client.list_databases())
@@ -56,6 +56,7 @@ insertion simple
 ```py
 db.movies.insert_one({"title":"The Lion King", "years":1994})
 ```
+
 trouver tous les films et les convertir en dataframe
 ```py
 movies = db.movies.find()
@@ -115,9 +116,9 @@ client.close()
 * Pas obligatoire
 * Mongosh + JSON Schema
 * Soit permanent sur une collection, soit à la demande lors des requêtes.
-* La validation peut ou pas s'appliquer aux documents existants (*validationLevel*)
-* L'échec d'une validation peut retourner une erreur ou un avertissement (*validationAction*)
-* On peut bypasser les validations (*bypassDocumentValidation*)
+* La validation peut ou pas s'appliquer aux documents existants lors de sa mis en place: *validationLevel*
+* L'échec d'une validation peut retourner une erreur ou un avertissement: *validationAction*
+* On peut esquiver les validations (mais c'est mal): *bypassDocumentValidation*
 
 ```py
 # à la création
