@@ -57,7 +57,12 @@ insertion simple
 movie = {"title":"The Lion King", "years":1994}
 insert = db.movies.insert_one(movie)
 ```
-l'id générée peuple automatiquement l'objet : movie['_id'] ou est accessible via insert.inserted_id 
+l'id générée peuple automatiquement l'objet : movie['_id'] ou est accessible via insert.inserted_id
+
+obtenir la date de création
+```py
+movie['_id'].generation_time
+```
 
 trouver tous les films et les convertir en dataframe
 ```py
