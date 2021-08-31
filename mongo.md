@@ -54,8 +54,10 @@ db.movies.insert_many(movies)
 
 insertion simple
 ```py
-db.movies.insert_one({"title":"The Lion King", "years":1994})
+movie = {"title":"The Lion King", "years":1994}
+insert = db.movies.insert_one(movie)
 ```
+l'id générée peuple automatiquement l'objet : movie['_id'] ou est accessible via insert.inserted_id 
 
 trouver tous les films et les convertir en dataframe
 ```py
