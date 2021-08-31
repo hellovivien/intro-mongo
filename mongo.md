@@ -163,6 +163,19 @@ db.createCollection("pokemon", {
  })
 ```
 
+### Sources
+
+cours gratuits : https://university.mongodb.com/
+
+équivalent sql -> mongo : https://docs.mongodb.com/manual/reference/sql-comparison/
+
+https://www.mongodb.com/licensing/server-side-public-license/faq
+https://www.zdnet.fr/actualites/mongodb-la-nouvelle-licence-sspl-fait-grincer-des-dents-dans-l-open-source-39879413.htm
+https://www.mongodb.com/blog/post/announcing-mongodb-atlas-database-as-a-service-for-mongodb
+https://blog.zwindler.fr/2021/01/23/lopen-source-saute-a-lelastic-avec-la-sspl/
+https://db-engines.com/en/ranking
+
+
 
 
 
